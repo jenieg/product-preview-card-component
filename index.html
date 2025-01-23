@@ -18,12 +18,19 @@
     </head>
 
     <body>
-        <section class="mx-5 mt-7 bg-white rounded-lg">
-
-          <picture >
-            <source srcset="./images/image-product-mobile.jpg" media="(max-width: 600px)" alt="Bottle of perfume laying on a white backround with greenery on the edges."/>
-            <img class="rounded-tl-lg rounded-tr-lg" src="./images/image-product-desktop.jpg" alt="Bottle of perfume laying on a white backround with greenery on the edges."/>
-          </picture>
+        <section class="sm:max-w-lg mx-5 mt-7 bg-white rounded-lg">
+          
+          <div class="sm:max-w-lg mx-auto">
+            <picture>
+              <source srcset="./images/image-product-mobile.jpg" media="(max-width: 639px)" />
+              <img 
+                class="rounded-tl-lg rounded-tr-lg" 
+                src="./images/image-product-desktop.jpg" 
+                alt="Bottle of perfume laying on a white background with greenery on the edges." 
+                loading="lazy" 
+              />
+            </picture>
+          </div>
 
           <section class="p-7">
             <span class="uppercase font-letterspace font-medium">perfume</span>
